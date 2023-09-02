@@ -1,0 +1,53 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+/*
+Instruções
+Vamos criar um array de objetos pessoa com, no mínimo, quatro itens. Cada um deles
+será composto por quatro propriedades: nome, idade, profissão e cidade.
+Dessa forma, declare os objetos pessoa dentro do array e, depois, desenvolva um
+código que utilize for in e for of para que todos os objetos e propriedades sejam
+impressos.
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o
+link desse projeto no campo ao lado para que outros desenvolvedores possam
+analisá-lo
+*/
+console.log("começando o algoritmo para utilizar o for... in e for...of\n");
+
+
+let pessoa = [
+  {
+    "nome": "JOSE",
+    "idade": 40,
+    "profissão": "AUTONOMO",
+    "cidade":"RECIFE"
+  },
+  {
+    "nome": "JOSEFA",
+    "idade": 41,
+    "profissão": "AUTONOMA",
+    "cidade":"RECIFE"
+  },
+  {
+    "nome": "ANA",
+    "idade": 46,
+    "profissão": "AUTONOMA",
+    "cidade":"RECIFE"
+  },
+  {
+    "nome": "ANTONIO",
+    "idade": 40,
+    "profissão": "AUTONOMO",
+    "cidade":"RECIFE"
+  }]
+console.log("o array pessoa possui o elemento: ",pessoa);
+
+console.log("pulando para utilizar o for...in\n");
+for (let i in pessoa) {
+  console.log(i); // escreve as posições 0, 1, 2, 3
+}
+console.log("pulando para utilizar o for...of\n");
+
+for (let i of pessoa) {
+  console.log(i); // escreve os valores do array objeto pessoa 
+}
+
